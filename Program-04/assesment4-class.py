@@ -22,7 +22,7 @@ class PermanentEmployee(Employee):  #child class
         self.salary = salary
 
     def display_Permanent(self): 
-        self.display_Employee
+        self.display_Employee()
         print("Joining Date : ",self.joining_date)
         print("Designation : ",self.designation)
         print("Salary :",self.salary)
@@ -36,7 +36,7 @@ class ContractEmployee(Employee): #child class
         self.hourly_rate = hourly_rate
 
     def display_Contract(self):
-        self.display_Employee
+        self.display_Employee()
         print("Start Date : ",self.start_date)
         print("Contract End Date : ",self.contract_end_date)
         print("Hourly Rate :",self.hourly_rate)
@@ -61,8 +61,8 @@ contract_emp = ContractEmployee(
     "2024-12-31",
     500
 )
-permanent_emp.display_Employee()
+
 permanent_emp.display_Permanent()
 print("-"*30)
-contract_emp.display_Employee()
 contract_emp.display_Contract()
+
